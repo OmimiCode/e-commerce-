@@ -1,14 +1,12 @@
 package com.pentazon.exceptions;
 
-import java.security.PrivilegedActionException;
-
-public class ProductException extends   PentazonExceptions {
+public class CheckOutException extends PentazonExceptions{
     /**
      * Constructs a new exception with {@code null} as its detail message.
      * The cause is not initialized, and may subsequently be initialized by a
      * call to {@link #initCause}.
      */
-    public ProductException() {
+    public CheckOutException() {
     }
 
     /**
@@ -19,7 +17,7 @@ public class ProductException extends   PentazonExceptions {
      * @param message the detail message. The detail message is saved for
      *                later retrieval by the {@link #getMessage()} method.
      */
-    public ProductException(String message) {
+    public CheckOutException(String message) {
         super(message);
     }
 
@@ -37,7 +35,7 @@ public class ProductException extends   PentazonExceptions {
      *                unknown.)
      * @since 1.4
      */
-    public ProductException(String message, Throwable cause) {
+    public CheckOutException(String message, Throwable cause) {
         super(message, cause);
     }
 
@@ -55,7 +53,7 @@ public class ProductException extends   PentazonExceptions {
      *              unknown.)
      * @since 1.4
      */
-    public ProductException(Throwable cause) {
+    public CheckOutException(Throwable cause) {
         super(cause);
     }
 
@@ -73,7 +71,7 @@ public class ProductException extends   PentazonExceptions {
      *                           be writable
      * @since 1.7
      */
-    public ProductException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+    public CheckOutException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
         super(message, cause, enableSuppression, writableStackTrace);
     }
 }
