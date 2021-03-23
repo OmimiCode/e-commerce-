@@ -8,13 +8,12 @@ public class Product {
     private String description;
     private BigDecimal price;
 
-    public Product(){}
-
-    public Product(String productName, String description, BigDecimal price){
-        this.name = productName;
+    public Product(String name, String description, BigDecimal price){
+        this.name = name;
         this.description = description;
         this.price = price;
     }
+    public Product(){}
 
     public String getProductId() {
         return productId;
